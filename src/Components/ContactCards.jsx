@@ -15,14 +15,25 @@ const ContactCards = () => {
   ];
 
   return (
-    <section className="grid grid-cols-2 gap-6">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 w-11/12 md:w-4/5 mx-auto my-10">
       {data.map((item) => (
-        <div key={item.id} className="p-6 bg-gray-200 rounded-3xl shadow text-2xl w-3/4 mx-auto p-10 mb-20">
-          <h2 className="font-bold text-3xl mb-3 ">City {item.id}</h2>
+        <div
+          key={item.id}
+          className="p-6 md:p-10 bg-gray-200 rounded-3xl shadow text-lg md:text-xl space-y-3"
+        >
+          <h2 className="font-bold text-2xl md:text-3xl mb-3">
+            City {item.id}
+          </h2>
 
-          <p><strong>Address:</strong> {item.address}</p>
-          <p><strong>Phone:</strong> {item.phone}</p>
-          <p><strong>Email:</strong> {item.email}</p>
+          <p>
+            <strong>Address:</strong> {item.address}
+          </p>
+          <p>
+            <strong>Phone:</strong> {item.phone}
+          </p>
+          <p>
+            <strong>Email:</strong> {item.email}
+          </p>
         </div>
       ))}
     </section>

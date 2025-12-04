@@ -2,7 +2,7 @@ const CedroData = ({ image }) => {
   return (
     <div className=" ">
       <div
-        className="relative bg-cover bg-center bg-no-repeat text-3xl p-10 rounded-xl  "
+        className="relative bg-cover bg-center bg-no-repeat text-3xl p-10 rounded-xl flex-cols-1 md:flex cols-2  "
         style={{ backgroundImage: `url(${image})`, minHeight: "400px" }}
     >
 

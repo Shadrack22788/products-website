@@ -1,6 +1,7 @@
 import World from '../Components/World'
 import cloud from "../assets/cloud.png"
 
+
 const World1 = () => {
 
   const worldData = [

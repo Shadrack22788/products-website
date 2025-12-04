@@ -57,7 +57,7 @@ const Card = () => {
   return (
     <section>
       <h1 className="text-center text-5xl py-5 font-bold ">Our services</h1>
-    <section className="grid grid-cols-3 gap-5 w-3/4 mx-auto pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-5 w-3/4 mx-auto pt-10 ">
       {cards.map((card) => (
         <Cards
           key={card.id}

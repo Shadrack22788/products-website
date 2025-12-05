@@ -1,14 +1,14 @@
 const Space = ({ image }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 gap-10">
       <div
         className="relative bg-cover bg-center bg-no-repeat text-white rounded-xl p-8 md:p-12"
         style={{ backgroundImage: `url(${image})`, minHeight: "450px" }}
       >
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/40 rounded-xl"></div>
+        
+        <div className="absolute inset-0 rounded-xl"></div>
 
-        {/* Content */}
+        
         <div className="relative z-10 space-y-4 max-w-lg 
                         text-center md:text-left 
                         mx-auto md:mx-0">
@@ -20,7 +20,7 @@ const Space = ({ image }) => {
             Sample text. Click to select the Text Element.
           </p>
 
-          {/* Email input */}
+        
           <input
             type="email"
             placeholder="Enter a valid email address"
@@ -28,7 +28,7 @@ const Space = ({ image }) => {
             required
           />
 
-          {/* Button */}
+          
           <button className="bg-[#f19a0e] px-6 py-3 rounded-full text-white font-semibold">
             Submit
           </button>

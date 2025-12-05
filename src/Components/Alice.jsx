@@ -6,10 +6,8 @@ const Alice = () => {
       <section className="relative w-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${materials})` }}
       >
-        {/* Optional dark overlay for readability */}
         <div className="absolute inset-0 "></div>
 
-        {/* Content */}
         <section className="relative w-11/12 md:w-3/4 mx-auto pt-20 md:pt-40 pb-16">
           <div>
             <h5 className="text-lg text-white">Our services</h5>
